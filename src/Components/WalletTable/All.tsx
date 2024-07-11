@@ -1,6 +1,7 @@
 import { SearchIcon } from "lucide-react";
 import { ChevronDown } from "lucide-react";
 import { ChevronsUpDown } from "lucide-react";
+import { Dot } from "lucide-react";
 import Button from "../Button";
 const All = () => {
   return (
@@ -53,10 +54,8 @@ const All = () => {
                 </tr>
               </thead>
               <tbody className="text-sm">
-                <tr
-                  className="bg-slate-100 text-black rounded-lg shadow-md my-3"
-                  style={{ margin: "12px 0" }}
-                >
+                <br />
+                <tr className="bg-slate-50 text-black rounded-lg shadow-md my-3">
                   <td className="p-2 text-start rounded-l-lg">0001</td>
                   <td className="p-2 text-start">Adenigba Ahmed Adefolarin</td>
                   <td className="p-2 text-start">lameda789@gmail.com</td>
@@ -64,12 +63,52 @@ const All = () => {
                   <td className="p-2 text-start">N34,698.140</td>
                   <td className="p-2 text-start">Dec 4, 2019 21:42</td>
                   <td className="p-2 text-start rounded-r-lg">
-                    <div className="flex items-center gap-3">
-                      <Button variant={"red"} className="p-1">pending</Button>
+                    <div className="flex items-center justify-between gap-3">
+                      <span className="py-1 pl-2 pr-4 rounded-2xl text-white bg-[#37cf61] flex items-center">
+                        <Dot strokeWidth={5} />
+                        Successful
+                      </span>
                       <Button variant={"red"}>view</Button>
                     </div>
                   </td>
                 </tr>
+                <br />
+                <tr className="bg-slate-50 text-black rounded-lg shadow-md my-3">
+                  <td className="p-2 text-start rounded-l-lg">0001</td>
+                  <td className="p-2 text-start">Adenigba Ahmed Adefolarin</td>
+                  <td className="p-2 text-start">lameda789@gmail.com</td>
+                  <td className="p-2 text-start">Credit</td>
+                  <td className="p-2 text-start">N34,698.140</td>
+                  <td className="p-2 text-start">Dec 4, 2019 21:42</td>
+                  <td className="p-2 text-start rounded-r-lg">
+                    <div className="flex items-center justify-between">
+                      <span className="py-1 pl-2 pr-4 rounded-2xl text-white flex items-center bg-red-500">
+                        <Dot strokeWidth={5} />
+                        Failed
+                      </span>
+                      <Button variant={"red"}>view</Button>
+                    </div>
+                  </td>
+                </tr>
+                <br />
+                <tr className="bg-slate-50 text-black rounded-lg shadow-md my-3">
+                  <td className="p-2 text-start rounded-l-lg">0001</td>
+                  <td className="p-2 text-start">Adenigba Ahmed Adefolarin</td>
+                  <td className="p-2 text-start">lameda789@gmail.com</td>
+                  <td className="p-2 text-start">Credit</td>
+                  <td className="p-2 text-start">N34,698.140</td>
+                  <td className="p-2 text-start">Dec 4, 2019 21:42</td>
+                  <td className="p-2 text-start rounded-r-lg">
+                    <div className="flex items-center justify-between">
+                      <span className="py-1 pl-2 pr-4 rounded-2xl text-white flex items-center justify-between bg-[#ffa349]">
+                        <Dot strokeWidth={5} />
+                        Pending
+                      </span>
+                      <Button variant={"red"}>view</Button>
+                    </div>
+                  </td>
+                </tr>
+                <br />
               </tbody>
             </table>
           </div>
