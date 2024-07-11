@@ -52,35 +52,24 @@ const All = () => {
                   </th>
                 </tr>
               </thead>
-              <tbody className="my-3">
-                <tr className="bg-slate-400 text-black rounded-lg my-3">
+              <tbody className="text-sm">
+                <tr
+                  className="bg-slate-100 text-black rounded-lg shadow-md my-3"
+                  style={{ margin: "12px 0" }}
+                >
                   <td className="p-2 text-start rounded-l-lg">0001</td>
                   <td className="p-2 text-start">Adenigba Ahmed Adefolarin</td>
                   <td className="p-2 text-start">lameda789@gmail.com</td>
                   <td className="p-2 text-start">Credit</td>
                   <td className="p-2 text-start">N34,698.140</td>
                   <td className="p-2 text-start">Dec 4, 2019 21:42</td>
-                  <td className="p-2 text-start rounded-r-lg">Completed</td>
+                  <td className="p-2 text-start rounded-r-lg">
+                    <div className="flex items-center gap-3">
+                      <Button variant={"red"} className="p-1">pending</Button>
+                      <Button variant={"red"}>view</Button>
+                    </div>
+                  </td>
                 </tr>
-                <tr className="bg-slate-400 text-black rounded-lg my-3">
-                  <td className="p-2 text-start rounded-l-lg">0001</td>
-                  <td className="p-2 text-start">Adenigba Ahmed Adefolarin</td>
-                  <td className="p-2 text-start">lameda789@gmail.com</td>
-                  <td className="p-2 text-start">Credit</td>
-                  <td className="p-2 text-start">N34,698.140</td>
-                  <td className="p-2 text-start">Dec 4, 2019 21:42</td>
-                  <td className="p-2 text-start rounded-r-lg">Completed</td>
-                </tr>
-                <tr className="bg-slate-400 text-black rounded-lg my-3">
-                  <td className="p-2 text-start rounded-l-lg">0001</td>
-                  <td className="p-2 text-start">Adenigba Ahmed Adefolarin</td>
-                  <td className="p-2 text-start">lameda789@gmail.com</td>
-                  <td className="p-2 text-start">Credit</td>
-                  <td className="p-2 text-start">N34,698.140</td>
-                  <td className="p-2 text-start">Dec 4, 2019 21:42</td>
-                  <td className="p-2 text-start rounded-r-lg">Completed</td>
-                </tr>
-
               </tbody>
             </table>
           </div>
