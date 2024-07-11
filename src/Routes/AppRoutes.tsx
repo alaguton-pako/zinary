@@ -16,7 +16,7 @@ import Setting from "../Pages/Setting";
 const AppRoutes = () => {
   return (
     <BrowserRouter>
-      <div className="container">
+      <div className="max-w-[1600px] mx-auto">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route element={<Layout />}>
