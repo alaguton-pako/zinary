@@ -24,7 +24,7 @@ const Wallet = () => {
   return (
     <Wrapper>
       <div className="flex flex-col gap-6">
-        <div className="my-2 flex items-center justify-between">
+        <div className="my-2 flex items-center justify-between flex-wrap">
           <div>
             <p className="text-xl text-gray-500 font-semibold">
               Wallet Overview
@@ -40,14 +40,16 @@ const Wallet = () => {
             </Button>
           </div>
         </div>
+
         <div className="h-[1px] w-full bg-black my-2"></div>
+
         <div className="grid grid-cols-12 gap-2">
-          <div className="col-span-4 h-[500px]">
+          <div className="col-span-12 h-[1000px] xl:col-span-4 md:h-[500px]">
             <Card className="w-full h-full p-2 grid grid-cols-12 gap-1">
               {walletItem.map((item) => (
                 <Card
                   key={item.id}
-                  className="col-span-6 h-[200px] bg-[#FFF7E5]"
+                  className="col-span-12  md:col-span-6 h-[200px] bg-[#FFF7E5]"
                 >
                   <div className="flex flex-col gap-2">
                     <h1 className="text-lg text-gray-500 font-semibold mt-4">
@@ -69,7 +71,7 @@ const Wallet = () => {
               </div>
             </Card>
           </div>
-          <div className="col-span-2 h-[500px]">
+          <div className="col-span-12 md:col-span-6 xl:col-span-2 h-[500px]">
             <Card className="w-full h-full flex flex-col justify-center custom">
               {middleWalletItem.map((item, index) => (
                 <div className="flex flex-col gap-3" key={index}>
@@ -84,12 +86,13 @@ const Wallet = () => {
               ))}
             </Card>
           </div>
-          <div className="col-span-6 h-[500px]">
+          <div className="col-span-12 md:col-span-6 h-[500px]">
             <Card className="w-full h-full">
               <LineChart />
             </Card>
           </div>
         </div>
+
         <div className="">
           <WalletTableComponent />
         </div>

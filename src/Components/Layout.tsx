@@ -7,7 +7,7 @@ import SidebarLinkItem from "./SidebarLinkItem";
 import image from "../images/sideBarImage.png";
 import SearchComponent from "./SearchComponent";
 import Wrapper from "./Wrapper";
-import { LayoutDashboard, Wallet, User, Settings, Library, Users2Icon, Banknote, BadgeCent, KeyboardMusic } from "lucide-react";
+import { LayoutDashboard, Wallet, User, Settings, Library, Users2Icon, Banknote, KeyboardMusic } from "lucide-react";
 
 export default function Layout() {
   return (

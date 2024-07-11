@@ -7,21 +7,27 @@ const All = () => {
   return (
     <>
       <div className="bg-white px-2 flex flex-col gap-2 mt-4 mb-6">
-        <div className="flex items-center justify-between">
-          <div className="relative flex items-center w-full my-2">
-            <SearchIcon className="absolute left-3" />
-            <input
-              type="text"
-              className="w-[1/5] p-2 pl-10 rounded-lg bg-[#f7f6f3]"
-              placeholder="search"
-            />
+        <div className="w-full flex items-center justify-between flex-wrap">
+          <div>
+            <div className="relative flex items-center w-full my-2">
+              <SearchIcon className="absolute left-3" />
+              <input
+                type="text"
+                className="w-[1/5] p-2 pl-10 rounded-lg bg-[#f7f6f3]"
+                placeholder="search"
+              />
+            </div>
           </div>
-          <div className="flex items-center gap-1">
-            <span className="text-xs text-gray-400 font-semibold">Display</span>
-            <Button variant={"ghost"} className="rounded-lg font-medium">
-              <ChevronDown className="h-2 w-2" />
-            </Button>
-            <span className="text-xs text-gray-400 font-semibold">Rows</span>
+          <div>
+            <div className="flex items-center gap-1">
+              <span className="text-xs text-gray-400 font-semibold">
+                Display
+              </span>
+              <Button variant={"ghost"} className="rounded-lg font-medium">
+                <ChevronDown className="h-2 w-2" />
+              </Button>
+              <span className="text-xs text-gray-400 font-semibold">Rows</span>
+            </div>
           </div>
         </div>
         <div className="my-4">
