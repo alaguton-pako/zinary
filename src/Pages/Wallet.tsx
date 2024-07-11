@@ -70,7 +70,7 @@ const Wallet = () => {
             </Card>
           </div>
           <div className="col-span-2 h-[500px]">
-            <Card className="w-full h-full bg-[#ff6610] flex flex-col justify-center">
+            <Card className="w-full h-full flex flex-col justify-center custom">
               {middleWalletItem.map((item, index) => (
                 <div className="flex flex-col gap-3" key={index}>
                   <p className="text-sm text-white">{item.title}</p>

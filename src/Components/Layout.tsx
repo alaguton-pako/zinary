@@ -7,6 +7,7 @@ import SidebarLinkItem from "./SidebarLinkItem";
 import image from "../images/sideBarImage.png";
 import SearchComponent from "./SearchComponent";
 import Wrapper from "./Wrapper";
+import { LayoutDashboard, Wallet, User, Settings, Library, Users2Icon, Banknote, BadgeCent, KeyboardMusic } from "lucide-react";
 
 export default function Layout() {
   return (
@@ -16,49 +17,48 @@ export default function Layout() {
           <SidebarLinkItem
             href={"dashboard"}
             label="Dashboard"
-            icon={<HiHome />}
+            icon={<LayoutDashboard />}
           />
 
-          <SidebarLinkItem
-            href={"short-loans"}
-            label="Short-loans"
-            icon={<HiHome />}
-          />
+          <SidebarLinkItem href={"short-loans"} label="Short-loans" />
           <SidebarLinkItem
             href={"installment-loans"}
             label="Installment loans"
-            icon={<HiHome />}
           />
-          <SidebarLinkItem href={"loans"} label="Loans" icon={<HiHome />} />
+          <SidebarLinkItem href={"loans"} label="Loans" icon={<Banknote />} />
 
           <SidebarLinkItem
             href={"transactions"}
             label="Transactions"
-            icon={<HiHome />}
+            icon={<Library />}
           />
-          <SidebarLinkItem href={"users"} label="Users" icon={<HiHome />} />
+          <SidebarLinkItem href={"users"} label="Users" icon={<Users2Icon />} />
 
           <SidebarLinkItem
             href={"payments"}
             label="Payments"
             icon={<HiHome />}
           />
-          <SidebarLinkItem href={"wallet"} label="Wallet" icon={<HiHome />} />
-          <SidebarLinkItem href={"staff"} label="Staff" icon={<HiHome />} />
+          <SidebarLinkItem href={"wallet"} label="Wallet" icon={<Wallet />} />
+          <SidebarLinkItem href={"staff"} label="Staff" icon={<User />} />
           <SidebarLinkItem
             href={"audit-trail"}
             label="Audit Trail"
-            icon={<HiHome />}
+            icon={<KeyboardMusic />}
           />
           <SidebarLinkItem
             href={"settings"}
             label="Settings"
-            icon={<HiHome />}
+            icon={<Settings />}
           />
         </div>
 
-        <div className="flex flex-col w-full mb-16">
-          <img src={image} alt="logo" />
+        <div className="flex flex-col h-[120px] w-full mb-10">
+          <img
+            src={image}
+            alt="logo"
+            className="h-full w-full object-cover object-center"
+          />
         </div>
       </Sidebar>
 

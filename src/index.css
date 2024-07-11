@@ -26,6 +26,11 @@ body {
 }
 
 .custom {
-  margin-top: 2px;
-  margin-bottom: 2px;
+  background-image: url("../public/assets/sideBarImage.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 102, 16, 0.9); 
+  background-repeat: no-repeat;
 }
+

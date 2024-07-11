@@ -111,6 +111,9 @@ const All = () => {
                 <br />
               </tbody>
             </table>
+            <div className="w-full flex justify-center">
+              <Button variant={"red"}>View All</Button>
+            </div>
           </div>
         </div>
       </div>
